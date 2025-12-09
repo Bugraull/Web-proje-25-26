@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spor sitesi fotoğraf galerisi.">
+    <title>📸 Fotoğraf Galerisi - SPOR SİTESİ</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div id="header">
+        <h1>SPOR HABER PORTALI</h1>
+    </div>
+
+    <nav id="ustMenu">
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5500/deneme.html">ANA SAYFA</a></li>
+            <li class="alt-menulu">
+                <a href="http://127.0.0.1:5500/s%C3%BCperlig.html">SÜPER LİG</a>
+                <ul class="alt-menu">
+                    <li><a href="http://127.0.0.1:5500/fikst%C3%BCr.html">Fikstür</a></li>
+                    <li><a href="http://127.0.0.1:5500/puan%20durumu.html">Puan Durumu</a></li>
+                </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5500/Avrupa%20Kupalar%C4%B1.html">AVRUPA KUPALARI</a></li>
+            <li><a href="http://127.0.0.1:5500/Galeri.html">FOTOĞRAF GALERİSİ</a></li>
+            <li><a href="http://127.0.0.1:5500/ileti%C5%9Fim.html">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    
+    <div id="anaIcerik" class="galeri-container"> 
+        
+        <h2 class="baslikKirmizi">Galeri</h2>
+        
+        <div id="galeriGrid"> 
+            
+            <div class="galeri-kart">
+                <img src="osikucuk.jpg" 
+                     alt="Sezonun transferi  Victor James Osimhen" 
+                     data-buyuk-src="osikucuk.jpg" 
+                     onclick="openModal(this)">
+            </div>
+            
+            <div class="galeri-kart">
+                <img src="holse.jpg" 
+                     alt="Samsun'un Maestrosu: Carlo Holse" 
+                     data-buyuk-src="holse.jpg" 
+                     onclick="openModal(this)">
+            </div>
+            
+            <div class="galeri-kart">
+                <img src="timjabol.png" 
+                     alt="Dinamo:Tim Jabol Folcarelli" 
+                     data-buyuk-src="timjabol.jpg" 
+                     onclick="openModal(this)">
+            </div>
+            
+            <div class="galeri-kart">
+                <img src="shomurodov.jpg" 
+                     alt="Golcü:Shomurodov" 
+                     data-buyuk-src="shomurodov.jpg" 
+                     onclick="openModal(this)">
+            </div>
+            
+        </div> <div class="tanitim-resmi" style="margin-top: 50px;">
+             <img src="bursatimsah.jpg" alt="Timsah arena" class="resim-linkli">
+             <a href="https://www.bursaspor.org.tr/" target="_blank" style="display: block; text-align: center; margin-top: 10px; color: #e50914;">Süper Lig Denince...</a>
+        </div>
+        
+    </div> <footer>
+        <div class="footerIcerik">...</div>
+    </footer>
+
+    <div id="galeriModal" class="modal">
+        <span class="kapat-butonu" onclick="closeModal()">&times;</span>
+        
+        <img class="modal-icerik" id="buyukResim" alt="Büyük Galeri Resmi">
+        
+        <div id="caption" class="caption"></div>
+    </div>
+    <footer>
+        <div class="footerIcerik">
+            <p>&copy; 2025 Spor Haber Portalı. Tüm Hakları Saklıdır.</p>
+            <p>Bu site Bugraull_ tarafından proje ödevi için tasarlanmıştır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
